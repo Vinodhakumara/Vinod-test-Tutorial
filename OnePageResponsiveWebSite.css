@@ -1,0 +1,297 @@
+/* '*'indicates Applys to all  */
+*{
+    /* box-sizing: border-box; this line removes all border assiged to elements */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* main navigation tag sets all */
+.nav{
+    position: fixed;
+    width:100%;
+    top:0;
+    line-height: 80px;
+    background:linear-gradient(azure,lightgray,lightgray);
+    font-size: 1.3em;
+}
+
+/* Logo 'VK' */
+.logo{
+    display: inline;
+    padding: 10px;
+    padding-left: 20px;
+    color:rgba(5, 3, 3, 0.671);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* navmenu(ul) contains all menus n floating to right */
+.navmenu{
+    float: right;
+    margin-right:10px ;
+}
+
+/* lilinks(li(s)) for PC n i-pad takes as inline-block  */
+.lilinks{
+    display: inline-block;
+    /* 0 refer to bottom padding 10px is top */
+    margin: 0px 10px;
+}
+
+/* link(a) links */
+.link{
+    /* 1vh is height of 'a' vw is width */
+    padding:1vh 2vw ;
+    color:rgba(0, 0, 0, 0.596);
+    text-shadow:1px 3px 5px rgb(252, 250, 250);
+}
+
+/* changes background color on PC,I-pad wn mouse goes over */
+.link:hover{
+    background:linear-gradient(50deg,rgb(239, 239, 240),rgb(162, 238, 241));
+    color:white;
+    text-shadow:1px 3px 10px rgb(15, 15, 15);
+}
+
+/* its label(burger) in PC,i-pad its none  */
+.burger{
+    display: none;
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    /* Moves burger 40px from right to left */
+    margin-right: 30px;
+    /* this points when curser on burger */
+    cursor: pointer;
+}
+
+/* Check box is none */
+#check{
+    display: none;
+}
+
+
+
+/* SIDE BAR MENU */
+.sideBar{
+    width:25vw;
+    text-align: center;
+    height: 95vh;
+    float: left;
+    background:linear-gradient(100deg,rgb(96, 214, 235),rgb(221, 251, 252));
+    transition: all 3s ease-in-out;
+}
+.side-sub-menus{
+    margin:10px 5vw;
+}
+h2{
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+}
+#list1,#list2,#list3,.list{
+    display: inline-blcok;
+    width:15vw;
+    text-align: center;
+    padding: 0.8em 0.5em;
+    background-color:lightgray;
+    border-bottom: 1px solid black;
+    pointer-events: none;
+}
+
+.list{
+    background:linear-gradient(200deg,lightgray,rgb(109, 109, 243),rgba(0, 0, 255, 0.637));
+    box-shadow:1px 1px 20px rgb(201, 163, 250);
+}
+
+#section1{
+    width:25vw;
+    float: right;
+    height:95vh;
+    text-align: center;
+    background:linear-gradient(100deg,rgb(221, 251, 252),rgb(96, 214, 235));
+    transition: all 3s ease-in-out;
+}
+
+.section1-div{
+    padding: 10vh 4vw;
+    width: auto;
+}
+.section1-lorem{
+    padding: 1em 0;
+    text-align: justify;
+}
+
+/* Section 2 for middle */
+#section2{
+    width:48.9vw;
+    height: 95vh;
+    float:right;
+    text-align: center;
+    background:linear-gradient(100deg,rgb(221, 251, 252),rgb(96, 214, 235),rgb(221, 251, 252));
+    transition: all 3s ease-out;
+}
+.section2-div{
+    padding: 40vh 15vw;
+}
+.section2-btn{
+    margin: 2em 0;
+    padding: 1em 0.5em;
+    border:1px solid black;
+}
+.section2-btn:hover{
+    background:linear-gradient(100deg,rgb(199, 200, 201),rgb(162, 238, 241));
+    box-shadow:1px 1px 30px rgb(201, 163, 250);
+}
+
+/* adding footer */
+.footer{
+    font-size: 2em;
+    text-align: center;
+    padding: 10vh 0;
+    margin-top: 10px;
+    background: azure;
+}
+.fa-facebook{
+    margin: 1em;
+    color: rgb(6, 9, 241);
+}
+.fa-twitter{
+    margin: 1em;
+    color: #55ACEE;
+}
+.fa-linkedin{
+    margin: 1em;
+    color: #007bb5;
+}
+.fa-instagram{
+    margin: 1em;
+    color: #125688
+}
+.fa-github{
+    margin: 1em;
+}
+.fa-github:hover{
+    text-shadow: 1px 1px 20px black;
+}
+.fa-facebook:hover{
+    text-shadow: 1px 1px 20px blue;
+}
+.fa-twitter:hover{
+    text-shadow: 1px 1px 20px #55ACEE;
+}
+.fa-linkedin:hover{
+    text-shadow: 1px 1px 20px #007bb5;
+}
+.fa-instagram:hover{
+    text-shadow: 1px 1px 20px #125688;
+}
+.copyright{
+    background-color: transparent;
+    border-style: none;
+    font-size: 1em;
+    font-weight: lighter;
+    
+}
+
+
+
+
+
+
+/* When reachs max-width of 650px this '@media' will works for mobile this helps us to make our project to be responsive */
+@media (max-width:650px){
+
+    /* this sets navigation bar to '80px' height */
+    .nav{height: 80px;line-height: 60px;}
+        
+    /* This updates complete navmenu */
+    .navmenu{
+        /* Fixes position exactly on position */
+        position:fixed;
+        /* sets menu bars to be full screen on width */
+        width:100%;
+        /* sets menu bars to be full screen on height */
+        height: 100vh;
+        /* Starting point for menubars */
+        top:80px;
+        /* moving from left to right if we wants menus to move righ to left thn set "left:100%"*/
+        left:-100%;
+        text-align: center;
+        background-color:rgba(4, 4, 7, 0.781);
+        color:white;
+        font-size: 1em;
+        /* "opacity" for transparent of color */
+        opacity: 0.5;
+        /* expands or starts links after '50px' from top*/
+        padding-top: 50px;
+        /* all elements moving 0.5s slowly  */
+        transition:all  .5s;
+    }
+
+    /* Visible only when mobile mode is on or reaches to 650px of width on window then "burger" block is displayed */
+    .burger{
+        display: block;
+        float: right;
+        color: black;
+    }
+
+    /* logo floating left n center*/
+    .logo{
+        float:left;
+        padding-left: 45vw;
+    }
+
+    /* Chnaged inline-block to blolck  */
+    .lilinks{
+        display: block;
+        /* 50px space between links or menus */
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    /* displaying link from inline to block  */
+    .link{
+        font-size: 1.5em;
+        display: block;
+    }
+
+    /* chnanges color when moves on */
+    .link:hover{
+        background: none;
+        color:#0082e6;
+        text-shadow: 1px 5px  10px rgb(37, 37, 37);
+    }
+
+    /* If any element is checked(clicked on burgermenu) then sets to 'left:0'  */
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    /* side bar modification */
+    .sideBar{
+        width:100%;
+        height:auto;
+    }
+    .side-sub-menus{
+        margin:2vh 25vw;
+    }
+    #list1,#list2,#list3,.list{
+        width:50vw;
+    }
+
+    /* Section 1 */
+    #section1{
+        width:100%;
+        height: auto;
+    }
+    /* Section 2 */
+    #section2{
+        width:100%;
+        height: auto;
+    }
+}
+
