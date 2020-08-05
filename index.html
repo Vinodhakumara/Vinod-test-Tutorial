@@ -1,0 +1,88 @@
+<!-- This project name itself says its Responsive Project and project contains adding projects deleting a project and updating a project even some UI?UX is added  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Responsive Web Page</title>
+    <script src="OnePageResponsiveWebSite.js"></script>
+    <!-- Taking source from kit.fontawesome.com library -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Linking a Style sheet -->
+    <link rel="stylesheet" href="OnePageResponsiveWebSite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+    <!--Creation of navigation menu-->
+    <nav class="nav navbar">
+        <!-- Layer for menu bar -->
+        <div class="menus">
+            <a href="OnePageResponsiveWebSite.html"><h1 class="logo">VK</h1></a>
+            <!-- Creation of checkbox for burger menu -->
+            <input type="checkbox" id="check">
+            <!-- for takes value from id n links to label -->
+            <label for="check" class="burger">
+                <!-- fas fa-bars are from Awesomw link which gives burger menu bar-->
+                <i class="fas fa-bars"></i>
+            </label>
+            <!-- Menu bars -->
+            <ul class="navmenu">
+                
+                <li class="lilinks"><a href="OnePageResponsiveWebSite.html" id="1link" class="link">Home</a></li>
+                <li class="lilinks"><a onclick="zoomMyProject()" href="#section0" id="2link"class="link">My Projects</a></li>
+                <li class="lilinks"><a href="#section2" id="5link"class="link">Add Projects</a></li>
+                <li class="lilinks"><a href="#section1" id="3link"class="link">About</a></li>
+                <li class="lilinks"><a href="#s" id="4link"class="link">Contact Us</a></li>
+                <li class="lilinks"><a href="#" id="5link"class="link">Sign in</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+    <aside class="side sideBar" id="section0">
+        <h2 id="h2"><em>My Projects</em></h2>
+        
+        <ul id="side-sub-menu" class="side-sub-menus"onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+            <li class="list" ><a href="#">Project 1 </a></li>
+        </ul>
+        <ul id="side-sub-menu2" class="side-sub-menus"   onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+            <li class="list"><a href="#">Project 2 </a></li>
+        </ul>
+        <ul id="side-sub-menu3" class="side-sub-menus"   onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+            <li class="list"><a href="#">Project 2 </a></li>
+        </ul>
+        <ul id="side-sub-menu4" class="side-sub-menus"   onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+            <li class="list"><a href="#">Project 2 </a></li>
+        </ul>
+    </aside>
+    
+    <section id="section1">
+        <div class="section1-div">
+            <h1 class="welcome" > About</h1>
+            <div class="section1-lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dicta, itaque voluptatibus vel, architecto quo quod sit error ratione corrupti reiciendis deserunt explicabo nihil dolore? Corporis iure modi voluptatem magnam!</div>
+        </div>
+
+    </section>
+    <section id="section2">
+        <div class="section2-div" id="section2-divId">
+            <h1 class="welcome"> Welcome to VK Projects</h1>
+            <div class="section2-btn">Add Project</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span class="span">
+            <i class="fa fa-github"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+        </span>
+        <div>
+            <button id="s" class="copyright"disabled="disabled">@copyright</button>
+        </div>
+    </footer>
+    
+</body>
+</html>
